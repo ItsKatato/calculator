@@ -4,88 +4,39 @@
         <title>Calculator</title>
         <meta charset='UTF-8'>
         <link rel='stylesheet' href='styles.css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body class='background'>
-        <script src='main.js'></script>
-        <div class='headerSection'>
-            <div class='leftHeader'>
-                <h1 class='logo'>Kalc</h1>
-            </div>
-            <div class='rightHeader'>
-                <div class='left'>
-                    <p class='themeTitle'>THEME</p>
-                </div>
-                <div class='right'>
-                    <div class="themeNumber">
-                        <p>1</p>
-                        <p>2</p>
-                        <p>3</p>
-                    </div>
-                    <input type='range' min="1" max='3' step="1" class='themeSlider'>
-                </div>
-            </div>
+        <script src='main.js' defer></script>
+        <div class='headerSection contPart'>
+            <h1 class='logo'>calc</h1>
         </div>
-        <div class='previewSection'>
+        <div class='previewSection contPart'>
             <div class='previewContainer'>
-                <h2 class='preview'>123,456</div>
+                <h2 class='preview'></div>
             </div>
         </div>
-        <div class='buttonSection'>
+        <div class='buttonSection contPart'>
             <div class='buttonContainer'>
                 <div class='buttonGrid'>
-                    <div class='num7'>
-                        <button class='button'>7</button>
-                    </div>
-                    <div class='num8'>
-                        <button class='button'>8</button>
-                    </div>
-                    <div class='num9'>
-                        <button class='button'>9</button>
-                    </div>
-                    <div class='del'>
-                        <button class='button'>del</button>
-                    </div>
-                    <div class='num4'>
-                        <button class='button'>4</button>
-                    </div>
-                    <div class='num5'>
-                        <button class='button'>5</button>
-                    </div>
-                    <div class='num6'>
-                        <button class='button'>6</button>
-                    </div>
-                    <div class='plus'>
-                        <button class='button'>+</button>
-                    </div>
-                    <div class='num1'>
-                        <button class='button'>1</button>
-                    </div>
-                    <div class='num2'>
-                        <button class='button'>2</button>
-                    </div>
-                    <div class='num3'>
-                        <button class='button'>3</button>
-                    </div>
-                    <div class='minus'>
-                        <button class='button'>-</button>
-                    </div>
-                    <div class='dec'>
-                        <button class='button'>.</button>
-                    </div>
-                    <div class='num0'>
-                        <button class='button'>0</button>
-                    </div>
-                    <div class='divide'>
-                        <button class='button'>/</button>
-                    </div>
-                    <div class='mult'>
-                        <button class='button'>*</button>
-                    </div>
-                    <div class='large reset'>
-                        <button class='button'>reset</button>
-                    </div>
-                    <div class='large equal'>
-                        <button class='button'>=</button>
+                        <button class='button number num7'>7</button>
+                        <button class='button number num8'>8</button>
+                        <button class='button number num9'>9</button>
+                        <button class='button del accent'>del</button>
+                        <button class='button number num4'>4</button>
+                        <button class='button number num5'>5</button>
+                        <button class='button number num6'>6</button>
+                        <button class='button operator plus'>+</button>
+                        <button class='button number num1'>1</button>
+                        <button class='button number num2'>2</button>
+                        <button class='button number num3'>3</button>
+                        <button class='button operator minus'>-</button>
+                        <button class='button number dec'>.</button>
+                        <button class='button number num0'>0</button>
+                        <button class='button operator divide'>/</button>
+                        <button class='button operator multi'>*</button>
+                        <button class='button large reset accent'>reset</button>
+                        <button class='button large equal'>=</button>
                     </div>
                 </div>
             </div>
