@@ -127,6 +127,8 @@ delBtn.addEventListener('click', () => {
     let newDisplayVal = displayVal
     if (displayVal === '0'){
         return;
+    } else if (equationInfo.number1 === null && equationInfo.operator === null && equationInfo.number2 === null && !(equationInfo.total === null)){
+        newDisplayVal = '0'
     } else {
         newDisplayVal = displayVal.slice(0, -1);
     }
