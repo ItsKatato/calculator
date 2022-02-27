@@ -84,11 +84,12 @@ h2 {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(4, 1fr);
-    height: auto;
-    width: 100%;
+    height: inherit;
+    width: inherit;
     padding: 25px;
-    gap: 13px;
+    gap: 3%;
     min-height: 0%;
+    min-width: 0%;
 }
 
 .button{
@@ -187,6 +188,21 @@ h2 {
 
     .logo {
         font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+
+    .button{
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .logo {
+        font-size: 30px;
     }
 }
 
